@@ -3,7 +3,7 @@
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 16pt;
 	color: #333;
 	line-height: 1.5;
   max-width: 1200px;
@@ -196,7 +196,7 @@ nav h1 a {
   max-height: 170px;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li button {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -223,38 +223,49 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+.filter-selects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.filter-lable {
+  display: none;
+}
+
 /* ====================== Restaurant Details ====================== */
-.inside header {
+/*.inside header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-}
+}*/
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
+  height: 200px;
+/*  position: fixed;
   right: 0;
   top: 80px;
   width: 50%;
+*/
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
 }
-.inside #footer {
+/*.inside #footer {
   bottom: 0;
   position: absolute;
   width: 50%;
-}
+}*/
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 24pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 15px 0 30px;
+  margin: 15px 10px;
   text-transform: uppercase;
   line-height: 1.1;
 }
