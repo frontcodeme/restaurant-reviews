@@ -78,7 +78,15 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<your MAPBOX API KEY HERE>',
+    mapboxToken: '<pk.eyJ1IjoiZnJvbnRjb2RlbWUiLCJhIjoiY2prZmRxYWt2MDc5czNrankwbzJ5b2dkaCJ9.9epLVxcx64sRr0mx6-Q3Rw>',
+    // var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
+    // mapboxgl.accessToken = 'pk.eyJ1IjoiZnJvbnRjb2RlbWUiLCJhIjoiY2prZmRxYWt2MDc5czNrankwbzJ5b2dkaCJ9.9epLVxcx64sRr0mx6-Q3Rw';
+    // var map = new mapboxgl.Map({
+    //   container: 'YOUR_CONTAINER_ELEMENT_ID',
+    //   style: 'mapbox://styles/mapbox/streets-v10'
+    // });
+
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
