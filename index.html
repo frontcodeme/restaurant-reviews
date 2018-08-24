@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
   <title>Restaurant Reviews</title>
 </head>
 
@@ -36,23 +34,21 @@
               <option value="all">All Cuisines</option>
             </select>
             <label id="cuisines-lable" class="filter-label">By cuisines</label>
-        </div>  
+        </div>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
   </main>
 
   <footer id="footer">
-    Copyright (c) 2017 
+    Copyright (c) 2017
     <a href="/">
       <strong>Restaurant Reviews</strong>
   </a> All Rights Reserved.
   </footer>
-
-  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=pk.eyJ1IjoiZnJvbnRjb2RlbWUiLCJhIjoiY2prZmRxYWt2MDc5czNrankwbzJ5b2dkaCJ9.9epLVxcx64sRr0mx6-Q3Rw&libraries=places&callback=initMap"></script> -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-cxVbqryrikvhCdgcGhzjEIlC5Pwmz0o&libraries=places&callback=initMap"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
 
 </body>
