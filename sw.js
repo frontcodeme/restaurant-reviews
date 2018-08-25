@@ -13,7 +13,6 @@ self.addEventListener('install', event => {
           '/js/register_sw.js',
           '/js/main.js',
           '/js/restaurant_info.js',
-          '/img/fixed/offline_img1.png'
         ]).catch(error => {
           console.log('Caches open failed: ' + error);
         });
@@ -59,3 +58,85 @@ self.addEventListener('activate', event => {
     })
   );
 });
+
+
+// var staticCacheName = 'restaurant-cache-1';
+
+// var urlToCache = [
+//           '/',
+//           '/index.html',
+//           '/restaurant.html',
+//           '/css/styles.css',
+//           '/data/restaurants.json',
+//           '/img/1.jpg',
+//           '/img/2.jpg',
+//           '/img/3.jpg',
+//           '/img/4.jpg',
+//           '/img/5.jpg',
+//           '/img/6.jpg',
+//           '/img/7.jpg',
+//           '/img/8.jpg',
+//           '/img/9.jpg',
+//           '/img/10.jpg',
+//           '/js/*',
+//           '/js/dbhelper.js',
+//           '/js/register_sw.js',
+//           '/js/main.js',
+//           '/js/restaurant_info.js',
+//     ];
+
+// self.addEventListener('install', (event) => {
+
+//   event.waitUntil(
+//     // Add cache.put to cache images on each fetch
+//     caches.open(staticCacheName).then( (cache) => {
+//       console.log(cache);
+//       return cache.addAll(urlToCache);
+  
+//     }).catch(error => {
+//       console.log(error);
+//       });
+//   );
+// });
+
+// // delete old/unused static caches
+// self.addEventListener('activate', (event) => {
+//   event.waitUntil(
+//     caches.keys().then((cacheNames) => {
+//       return Promise.all(
+//         cacheNames.filter((cacheName) => {
+//           return cacheName.startsWith('restaurant-') && cacheName !== staticCacheName;
+//         }).map((cacheName) => {
+//           return caches.delete(cacheName);
+//         })
+//       );
+//     })
+//   );
+// });
+
+//   self.addEventListener('fetch', event => {
+//     evevnt.respondWith(
+//       caches.match(event.request).then((response) => {
+//         return response || fetch(event.request);
+//       })
+//     );
+//   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
