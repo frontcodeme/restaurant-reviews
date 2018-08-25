@@ -1,4 +1,3 @@
-/*jshint esversion: 6 */
 
 var staticCacheName = 'restaurant-cahce-1';
 let urlToCache = [
