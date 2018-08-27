@@ -20,13 +20,41 @@ body {
   margin: 0;
   position:relative;
 }
-ul, li {
-  /* font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-  color: #333; */
+
+/* ====================== breadcrumb ====================== */
+nav.breadcrumb {
+  padding: 0.8em 1em;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  background: hsl(300, 14%, 97%);
+}
+
+nav.breadcrumb ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav.breadcrumb li {
+  display: inline;
+}
+
+nav.breadcrumb li + li::before {
+  display: inline-block;
+  margin: 0 .25em;
+  transform: rotate(15deg);
+  border-right: .1em solid currentColor;
+  height: .8em;
+  content: '';
+}
+
+nav.breadcrumb [aria-current="page"] {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
 }
 a {
-  /* color: orange; */
+  /* color: orange;
   /* color: #d85b5b; */
   /* color: #ff9292; */
   color: green;
@@ -35,7 +63,7 @@ a {
 a:hover, a:focus {
   /* color: #3397db; */
   /* color: #d85b5b; */
-  color: #d85b5b;  
+  color: #d85b5b;
   text-decoration: none;
 }
 nav h1 a:hover {
@@ -199,7 +227,7 @@ nav h1 a {
   /* padding: 30px 15px 60px; */
   padding: 20px 15px;
   text-align: center;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -455,7 +483,7 @@ nav h1 a {
   #restaurants-list li {
     width: 270px;
   }
-}  
+}
 
 @media screen and (max-width: 635px) {
   #restaurant-container, #reviews-container, #breadcrumb {
